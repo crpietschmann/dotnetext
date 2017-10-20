@@ -1,0 +1,86 @@
+﻿//Copyright (c) Chris Pietschmann 2012 (http://pietschsoft.com)
+//All rights reserved.
+//Licensed under the GNU Library General Public License (LGPL)
+//License can be found here: http://www.codeplex.com/dotNetExt/license
+
+CHANGE LOG
+----------
+
+vNext
+---------
+- Updated to .NET 4.0
+- Made all methods automatically available when including "dotNetExt" namespace. Specific sets
+  of extension methods are no longer available in isolation. This is for ease of implementeding
+  new methods, and Who wouldn't want access to all the methods anyway?
+- Revived the dotNetExt project from the OSS grave, after not being updated in over 3 years
+- Add a bunch more methods to dotNetExt
+- Added dotNetExt.Validation assembly to contain some generic, reusable method parameter validation code
+- Added/Fixed Unit Tests
+- Replaced Array extensions with better IEnumerable extensions (possible breaking change)
+
+
+v0.2 Beta
+---------
+dotNetExt namespace
+Importing this namespace you will import all the Extension Methods in the Library.
+
+dotNetExt.EventHandler namespace
+This namespace includes Extension Method for the System.EventHandler Type only.
+
+    * Raise() - Method for invoking/raising events.
+    * Raise<>() - Method for invoking/raising events.
+
+dotNetExt.Object namespace
+This namespace includes Extension methods for the System.Object Type only.
+
+    * GetAttribute<>() - Returns the First Attribute tied to the Object of the Specified Generic Type
+    * GetAttributes<>() - Returns All Attributes tied to the Object of the Specified Generic Type
+
+dotNetExt.String namespace
+This namespace includes Extension methods for the System.String Type only.
+    * ToStream() - Returns a MemoryStream representation of the string.
+    * Encrypt() - Returns the String Encrypted using the given Encryption Algorithm and key.
+    * Decrypt() - Returns the String Decrypted using the given Encryption Algorithm and key.
+    
+dotNetExt.IO.Stream namespace
+This namespace includes Extension methods for the System.IO.Stream Type only.
+    * Encrypt() - Returns a read-only Encrypted stream from the original stream.
+    * Decrypt() - Returns a read-only Decrypted stream from the original stream.
+    * ToByteArray() - Returns a Byte Array containing the contents of the Stream.
+
+dotNetExt.DateTime namespace
+This namespace includes Extension methods for the System.DateTime Type only.
+    * IsWeekend() - Returns whether the DateTime is on a Weekend.
+    * IsWeekDay() - Returns whether the DateTime is on a Week Day.
+
+
+v0.1 Beta
+---------
+dotNetExt namespace
+Importing this namespace you will import all the Extension Methods from the below namespaces.
+
+dotNetExt.Array namespace
+This namespace includes Extension Methods for the System.Array Type only.
+
+    * IsEmpty() - Returns a Boolean indicating whether the Array is Empty (is Null or has a length of zero).
+
+dotNetExt.Object namespace
+This namespace includes Extension Methods for the System.Object Type only.
+
+    * IsType() - Returns a Boolean value indicating whether a variable is of the indicated Type
+    * IsArray() - Returns a Boolean value indicating whether a variable points to a System.Array.
+    * IsDate() - Returns a Boolean value indicating whether a variable points to a DateTime object.
+    * IsDBNull() - Returns a Boolean value indicating whether an expression evaluates to the DBNull class.
+
+dotNetExt.String namespace
+This namespace includes Extension Methods for the System.String Type only.
+
+    * Left() - Returns a string containing a specified number of characters from the left side of a string.
+    * Right() - Returns a string containing a specified number of characters from the right side of a string.
+    * EncodeHtml() - Returns the String HtmlEncoded.
+    * DecodeHtml() - Returns the String HtmlDecoded.
+    * EncodeUrl() - Returns the String UrlEncoded.
+    * DecodeUrl() - Returns the String UrlDecoded.
+    * EncodeBase64() - Returns the String Base64 Encoded.
+    * DecodeBase64() - Returns the String Base64 Decoded.
+    * ToByteArray() - Returns a Byte Array of the String.

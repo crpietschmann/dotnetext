@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>dotNetExt</id>
+    <title>dotNetExt</title>
+    <version>1.4.0</version>
+    <authors>Chris Pietschmann</authors>
+    <owners>Chris Pietschmann</owners>
+    <licenseUrl>http://dotnetext.codeplex.com/license</licenseUrl>
+    <projectUrl>http://dotnetext.codeplex.com</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>An extension method library for the .NET Framework 4.0 (or higher) that extends the BCL types with helper methods that make simple tasks simpler.</description>
+    <releaseNotes>https://dotnetext.codeplex.com/releases</releaseNotes>
+    <copyright>Copyright (c) 2013 Chris Pietschmann</copyright>
+    <tags>extension requireargument helper</tags>
+  </metadata>
+</package>

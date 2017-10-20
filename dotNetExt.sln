@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3AC44380-2397-4531-BBAC-593EADA72480}"
+	ProjectSection(SolutionItems) = preProject
+		dotNetExt.vsmdi = dotNetExt.vsmdi
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotNetExt", "dotNetExt\dotNetExt.csproj", "{A5929990-ACD3-4EF5-8C60-88E5C00FF35A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotNetExtTests", "TestProject\dotNetExtTests.csproj", "{11E928A1-B6D0-4249-9B68-0D121DEAD1D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nuget", "Nuget", "{05915323-E7AE-4EA3-9D8F-329037346276}"
+	ProjectSection(SolutionItems) = preProject
+		Nuget\dotNetExt.1.2.0.nupkg = Nuget\dotNetExt.1.2.0.nupkg
+		Nuget\dotNetExt.1.3.0.nupkg = Nuget\dotNetExt.1.3.0.nupkg
+		Nuget\NuGet.exe = Nuget\NuGet.exe
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{CAB1F3E8-8C93-4F16-AFBE-2A06CFC0E143}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "package", "package", "{DAE76DA1-E5DA-409D-9C56-D2771676E07D}"
+	ProjectSection(SolutionItems) = preProject
+		Nuget\package\dotnetext.nuspec = Nuget\package\dotnetext.nuspec
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{4787804A-01BC-4F1C-B8DF-AF02749C1E95}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "net", "net", "{2FB55549-0E60-4E8B-9953-32602442BDE1}"
+	ProjectSection(SolutionItems) = preProject
+		Nuget\package\lib\net\dotNetExt.dll = Nuget\package\lib\net\dotNetExt.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs03
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = dotNetExt\\dotNetExt.csproj
+		SccProjectName1 = dotNetExt
+		SccLocalPath1 = dotNetExt
+		SccProjectUniqueName2 = TestProject\\dotNetExtTests.csproj
+		SccProjectName2 = TestProject
+		SccLocalPath2 = TestProject
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = dotNetExt.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5929990-ACD3-4EF5-8C60-88E5C00FF35A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5929990-ACD3-4EF5-8C60-88E5C00FF35A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5929990-ACD3-4EF5-8C60-88E5C00FF35A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5929990-ACD3-4EF5-8C60-88E5C00FF35A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11E928A1-B6D0-4249-9B68-0D121DEAD1D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11E928A1-B6D0-4249-9B68-0D121DEAD1D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11E928A1-B6D0-4249-9B68-0D121DEAD1D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11E928A1-B6D0-4249-9B68-0D121DEAD1D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DAE76DA1-E5DA-409D-9C56-D2771676E07D} = {05915323-E7AE-4EA3-9D8F-329037346276}
+		{4787804A-01BC-4F1C-B8DF-AF02749C1E95} = {DAE76DA1-E5DA-409D-9C56-D2771676E07D}
+		{2FB55549-0E60-4E8B-9953-32602442BDE1} = {4787804A-01BC-4F1C-B8DF-AF02749C1E95}
+	EndGlobalSection
+EndGlobal
